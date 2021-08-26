@@ -98,9 +98,13 @@ ul {
 }
 .for-mailto,
 .for-tel {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
+  fill: currentColor;
+  align-items: center;
+  display: inline-flex;
+}
+.for-mailto:hover,
+.for-tel:hover {
+  fill: currentColor;
 }
 
 .nav-head li:not(:last-child),
@@ -204,13 +208,29 @@ ul {
 .about-topic:not(:last-child) {
   margin-right: 30px;
 }
+.about-topic::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
 .antenna::before {
-  content: "";
-  background-image: url(../Images/symbol-defs-opt.svg#icon-antenna);
-  width: 270px;
-  height: 120px;
-  background-size: contain;
+  background-image: url(../Images/antenna-svg.svg);
+}
+
+.clock::before {
+  background-image: url(../Images/clock-svg.svg);
+}
+.diagram::before {
+  background-image: url(../Images/diagram-svg.svg);
+}
+.kosmonaut::before {
+  background-image: url(../Images/kosmonaut-svg.svg);
 }
 /***********************Чем мы занимаемся**************************************/
 .our-work {
@@ -260,6 +280,22 @@ ul {
   padding-top: 94px;
 }
 
+.clients {
+  padding-bottom: 50px;
+}
+.our-clients {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
 /***footer css**/
 footer {
   background: var(--background-color);
@@ -305,6 +341,61 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
+}
+.injoy {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.injoy-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+.injoy-list {
+  display: flex;
+  justify-content: center;
+}
+.social-link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--main-text-color);
+  fill: var(--light-text-color);
+}
+.injoy-list-item {
+  content: "";
+  display: inline-block;
+
+  background-size: 22px;
+  background-position: center;
+  fill: var(--light-text-color);
+}
+.injoy-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--second-color);
+}
+.instagram {
+  content: "";
+  background-image: url(../Images/symbol-defs-colorless.svg#icon-instagram);
+  height: 44px;
+  width: 44px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.foot-and-injoy {
+  display: flex;
 }
 
 /***Портфолио**/
@@ -385,6 +476,7 @@ footer {
 .link:hover,
 .link:focus {
   color: var(--second-color);
+  fill: var(--second-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {

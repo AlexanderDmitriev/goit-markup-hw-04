@@ -21,12 +21,13 @@
     <header class="header">
       <div class="container heading">
         <nav class="header-navigation">
+          <!---Лого сайта-->
           <a href="./index.html" class="logo" lang="en">
             <span class="half-logo">Web</span>Studio
           </a>
-          <!---Лого сайта-->
+
           <ul class="list nav-head">
-            <!---Меню в хедере-->
+            <!-----------------Меню в хедере---------------->
             <li>
               <a href="" class="link header-link"> Студия </a>
             </li>
@@ -41,15 +42,25 @@
           </ul>
         </nav>
         <ul class="list post-and-phone">
-          <!--Почта и телефон-->
+          <!---------------Почта и телефон---------------->
           <li>
             <a href="mailto:info@devstudio.com" class="link header-link"
-              >info@devstudio.com</a
-            >
+              ><svg class="for-mailto" width="16" height="10">
+                <use
+                  href="./images/symbol-defs-colorless.svg#icon-envelope"
+                ></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="link header-link"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="link header-link">
+              <svg class="for-tel" width="10" height="12">
+                <use
+                  href="./images/symbol-defs-colorless.svg#icon-smartphone"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -205,32 +216,79 @@
     </main>
 
     <footer>
-      <div class="container">
-        <a href="./index.html" class="lower-logo" lang="en">
-          <span class="left-half-logo-footer">Web</span
-          ><span class="right-half-logo-footer">Studio</span>
-        </a>
-        <address class="address-ccs">
-          <ul>
-            <li class="list footer-adress">
-              <a
-                href="https://goo.gl/maps/MTrRzGX6fxmaniAc8"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container foot-and-injoy">
+        <div>
+          <a href="./index.html" class="lower-logo" lang="en">
+            <span class="left-half-logo-footer">Web</span
+            ><span class="right-half-logo-footer">Studio</span>
+          </a>
+          <address class="address-ccs">
+            <ul>
+              <li class="list footer-adress">
+                <a
+                  href="https://goo.gl/maps/MTrRzGX6fxmaniAc8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="list footer-post-and-phone">
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list footer-post-and-phone">
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="injoy">
+          <h3 class="injoy-text">присоединяйтесь</h3>
+          <ul class="list injoy-list">
+            <li class="injoy-list-item">
+              <a href="" class="social-link instagram"
+                ><span class="visually-hidden">Instagram</span>
+                <svg class="icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-colorless.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="list footer-post-and-phone">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
+            <li class="injoy-list-item">
+              <a href="" class="social-link twitter"
+                ><span class="visually-hidden">Twitter</span>
+                <svg class="icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-colorless.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="list footer-post-and-phone">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <li class="injoy-list-item">
+              <a href="" class="social-link facebook"
+                ><span class="visually-hidden">facebook</span>
+                <svg class="icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-colorless.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="injoy-list-item">
+              <a href="" class="social-link linkedin"
+                ><span class="visually-hidden">linkedin</span>
+                <svg class="icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-colorless.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
