@@ -288,6 +288,7 @@ ul {
 .social-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .team-link {
   height: 44px;
