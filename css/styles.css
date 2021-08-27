@@ -5,6 +5,7 @@
   --background-color: #2f303a;
   --light-text-color: #ffffff;
   --second-color: #2196f3;
+  --company-color: #afb1b8;
 }
 /***Общее**/
 html {
@@ -262,7 +263,7 @@ ul {
 }
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .team-role {
   font-weight: 400;
@@ -272,12 +273,36 @@ ul {
   text-align: center;
   color: var(--main-text-color);
 }
+.team-list {
+  box-shadow: 1px 1px 5px var(--company-color);
+  border-radius: 4px;
+}
+
 .team-list:not(:last-child) {
   margin-right: 30px;
 }
 .team-introduction {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-text-color);
+}
+
+.team-link:hover,
+.team-link:focus {
+  border-radius: 50%;
+  background-color: var(--second-color);
+  fill: var(--light-text-color);
 }
 
 .clients {
@@ -289,11 +314,29 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
   justify-content: center;
+}
+.company {
+  content: "";
+  height: 92px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  fill: var(--company-color);
+  border: 1px solid var(--company-color);
+}
+.company:hover,
+.company:focus {
+  fill: var(--second-color);
+  border: 1px solid var(--second-color);
 }
 
 /***footer css**/
@@ -385,15 +428,15 @@ footer {
 .social-link:focus {
   background-color: var(--second-color);
 }
-.instagram {
+/**.instagram {
   content: "";
-  background-image: url(../Images/symbol-defs-colorless.svg#icon-instagram);
+  background-image: url(../Images/icons.svg#icon-instagram);
   height: 44px;
   width: 44px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
+}*/
 .foot-and-injoy {
   display: flex;
 }
@@ -409,6 +452,11 @@ footer {
 }
 .content-projects {
   padding-top: 22px;
+}
+.projects:hover,
+.projects:focus {
+  box-shadow: 1px 1px 5px var(--company-color);
+  border-radius: 4px;
 }
 .port {
   border-top: 1px solid #ececec;
@@ -482,4 +530,6 @@ footer {
 .portfolio-button:focus {
   color: var(--light-text-color);
   background-color: var(--second-color);
+  box-shadow: 1px 1px 5px var(--company-color);
+  border-radius: 4px;
 }
