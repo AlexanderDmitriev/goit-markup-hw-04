@@ -221,17 +221,17 @@ ul {
 }
 
 .antenna::before {
-  background-image: url(../Images/antenna-svg.svg);
+  background-image: url(../images/antenna-svg.svg);
 }
 
 .clock::before {
-  background-image: url(../Images/clock-svg.svg);
+  background-image: url(../images/clock-svg.svg);
 }
 .diagram::before {
-  background-image: url(../Images/diagram-svg.svg);
+  background-image: url(../images/diagram-svg.svg);
 }
 .kosmonaut::before {
-  background-image: url(../Images/kosmonaut-svg.svg);
+  background-image: url(../images/kosmonaut-svg.svg);
 }
 /***********************Чем мы занимаемся**************************************/
 .our-work {
