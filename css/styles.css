@@ -6,6 +6,7 @@
   --light-text-color: #ffffff;
   --second-color: #2196f3;
   --company-color: #afb1b8;
+
 }
 /***Общее**/
 html {
@@ -102,6 +103,7 @@ ul {
   fill: currentColor;
   align-items: center;
   display: inline-flex;
+  margin-right: 10px;
 }
 .for-mailto:hover,
 .for-tel:hover {
@@ -284,10 +286,11 @@ ul {
 .team-introduction {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: #F5F4FA;
 }
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   padding-bottom: 30px;
 }
 .team-link {
@@ -296,7 +299,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--main-text-color);
+  fill: var(--company-color);
 }
 
 .team-link:hover,
@@ -307,10 +310,11 @@ ul {
 }
 
 .clients {
-  padding-bottom: 50px;
+  padding-top: 100px;
+  /*padding-bottom: 236px;*/
 }
 .our-clients {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -321,6 +325,7 @@ ul {
 .clients-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 .company {
   content: "";
@@ -330,7 +335,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  /*background-color: #f5f4fa;*/
   fill: var(--company-color);
   border: 1px solid var(--company-color);
 }
@@ -391,7 +396,7 @@ footer {
   margin-top: 12px;
 }
 .injoy-text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -411,7 +416,7 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--main-text-color);
+  background-color:rgba(255, 255, 255, 0.1);
   fill: var(--light-text-color);
 }
 .injoy-list-item {
@@ -421,9 +426,13 @@ footer {
   background-size: 22px;
   background-position: center;
   fill: var(--light-text-color);
+  /*fill: rgba(255, 255, 255, 0.1);*/
 }
 .injoy-list-item:not(:last-child) {
   margin-right: 10px;
+}
+.company-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .social-link:hover,
 .social-link:focus {
@@ -451,9 +460,9 @@ footer {
   height: 1px;
   margin: -1px;
 }
-.content-projects {
+/*.content-projects {
   padding-top: 22px;
-}
+}*/
 .projects:hover,
 .projects:focus {
   box-shadow: 1px 1px 5px var(--company-color);
@@ -477,6 +486,7 @@ footer {
   margin-right: -30px;
 }
 .projects:nth-last-child(-n + 3) {
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
